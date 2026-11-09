@@ -1,0 +1,29 @@
+# ── 第三方依赖 / 运行时（体积大，不入库）
+dsh-cli/
+repo/
+node_modules/
+
+# ── 本机运行状态（含会话/工作单数据，不入库）
+state/
+state.lock/
+state.lock.stale-*/
+
+# ── 运行时日志与进程标识
+*.log
+*.pid
+
+# ── 机器人运行时数据（日志、pid、去重记录）
+lark-bot/data/
+
+# ── 本地会话与工具配置
+.dsh/
+
+# ── 临时文件
+*.tmp
+qr-*.png
+_record_payload.json
+
+# ── 系统文件
+Thumbs.db
+desktop.ini
+.DS_Store
