@@ -2,11 +2,17 @@
 dsh-cli/
 repo/
 node_modules/
+tools/gh/
 
 # ── 本机运行状态（含会话/工作单数据，不入库）
 state/
 state.lock/
 state.lock.stale-*/
+
+# ── 凭据与身份配置（含 token / 密钥引用，绝不入库）
+.gh-agent/
+lark-cli-bot/
+!lark-cli-bot/lark-bot.cmd
 
 # ── 运行时日志与进程标识
 *.log
@@ -22,6 +28,7 @@ lark-bot/data/
 *.tmp
 qr-*.png
 _record_payload.json
+_rec*.json
 
 # ── 系统文件
 Thumbs.db
